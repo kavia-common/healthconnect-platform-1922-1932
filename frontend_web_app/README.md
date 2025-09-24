@@ -27,31 +27,30 @@ Launches the test runner in interactive watch mode.
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
+## HealthConnect UI (Ocean Professional)
+
+- Theme: Blue primary (#2563EB) and amber accents (#F59E0B), subtle gradients, rounded corners, and soft shadows.
+- Layout: Sticky header with logo and navigation; main grid with a quick-links sidebar and content; footer with contact.
+- Pages:
+  - Home: Hero card, Popular Services grid, Featured Providers grid, and Health Information highlights.
+  - Services: Grid of service cards with Book Now actions.
+  - Providers: Grid of provider cards with specialties.
+  - Health Info: Grid of article cards.
+
+All components are built with accessible HTML and minimal CSS in `src/App.css`.
+
 ## Customization
 
-### Colors
-
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
+Colors and radii are defined as CSS variables in `src/App.css`.
 
 ### Components
 
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
+The project uses small, reusable components:
+- `Sidebar` (quick links + contact)
+- `Footer` (contact info)
+- `Section` (section header wrapper)
+- `Card` (panel with header/body)
+- `ProviderCard` (service/provider display)
 
 ## Learn More
 
